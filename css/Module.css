@@ -1,0 +1,370 @@
+@import url(Tokens.css);
+
+/* =========================================================
+   GLASSMORPHISM CHANGELOG
+   - [MOD] Legacy md_style sections with solid white surfaces -> glass surfaces
+   - [MOD] module-special/md_style8 container -> glass
+   - [NOTE] Home Modules scoped to .page-home; kept and aligned to glass tokens
+   ========================================================= */
+
+/* =========================================================
+   Themes（主題變體、視覺語彙覆蓋）
+   - 全面改寫為 Tokens.css 的 p-/s-/pt- token 命名
+   ========================================================= */
+
+.md_style1 .d-title .mbox:hover .mtitle a {
+	color: var(--p-color-accent-500);
+}
+
+.md_style1 header.mt {
+	background: linear-gradient(135deg, var(--p-color-brand-600), var(--p-color-brand-900));
+}
+
+.md_style1 header.mt .mt-title {
+	color: var(--p-color-white);
+	padding: var(--p-space-3p75) var(--pt-space-25);
+}
+
+.md_style1 header.mt:before {
+	display: none;
+}
+
+/* --- style2 --- */
+.md_style2 .d-title .mbox:hover .mtitle a {
+	color: var(--p-color-brand-700);
+}
+
+.md_style2 header.mt {
+	background: linear-gradient(135deg, var(--p-color-slate-700), var(--p-color-slate-900));
+}
+
+.md_style2 header.mt .mt-title {
+	color: var(--p-color-white);
+	padding: var(--p-space-3p75) var(--pt-space-25);
+}
+
+.md_style2 header.mt:before {
+	display: none;
+}
+
+/* --- style3 --- */
+.md_style3 .d-title .mbox:hover .mtitle a {
+	color: var(--p-color-accent-500);
+}
+
+.md_style3 header.mt {
+	background: linear-gradient(135deg, var(--p-color-accent-500), var(--p-color-accent-600));
+}
+
+.md_style3 header.mt .mt-title {
+	color: var(--p-color-white);
+	padding: var(--p-space-3p75) var(--pt-space-25);
+}
+
+.md_style3 header.mt:before {
+	display: none;
+}
+
+/* --- style4 --- */
+.md_style4 .d-title .mbox:hover .mtitle a {
+	color: var(--s-color-success);
+}
+
+.md_style4 header.mt {
+	background: linear-gradient(135deg, var(--s-color-success), var(--p-color-brand-600));
+}
+
+.md_style4 header.mt .mt-title {
+	color: var(--p-color-white);
+	padding: var(--p-space-3p75) var(--pt-space-25);
+}
+
+.md_style4 header.mt:before {
+	display: none;
+}
+
+.md_style4 section.mb {
+	/* [GLASS][MOD] surface: white -> glass */
+	background: var(--s-color-glass-85);
+	backdrop-filter: blur(var(--pt-effect-blur-glass));
+	-webkit-backdrop-filter: blur(var(--pt-effect-blur-glass));
+	border-radius: 0 0 var(--p-space-5) var(--p-space-5);
+	padding: var(--p-space-2p5) var(--p-space-5);
+	box-shadow: var(--p-shadow-sm);
+}
+
+/* --- style5 --- */
+.md_style5 .d-img .mbox a img {
+	border-radius: 100%;
+	width: 100%;
+	box-shadow: var(--pt-shadow-circle-img);
+}
+
+.md_style5 .d-img .mbox:hover .d-img a:after {
+	content: "";
+	width: var(--pt-size-37);
+	height: var(--pt-size-37);
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transition: all var(--p-motion-dur-200) var(--p-motion-ease-standard);
+	transform: translate(-50%, -50%);
+}
+
+.md_style5 .d-img .mbox:hover .d-img a:before {
+	content: "";
+	background: var(--s-color-overlay-dark-50);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 100%;
+	transition: all var(--p-motion-dur-200) var(--p-motion-ease-standard);
+}
+
+.md_style5 .d-item.v-it .mbox {
+	background: var(--p-color-white);
+	padding: var(--p-space-3p75) var(--p-space-3p75) var(--p-space-5);
+	margin-bottom: var(--p-space-3p75);
+	border-radius: var(--p-radius-md);
+	box-shadow: var(--p-shadow-sm);
+	border: solid var(--p-border-width-sm) transparent;
+}
+
+.md_style5 .d-item.v-it .mbox:hover {
+	background: none;
+	border-color: var(--p-color-accent-500);
+	transition: all var(--p-motion-dur-200) var(--p-motion-ease-standard);
+}
+
+.md_style5 .d-item.v-it .mbox:hover .mdate {
+	color: var(--p-color-accent-500);
+}
+
+.md_style5 .d-item.v-it .mbox:hover a {
+	color: var(--p-color-accent-500);
+}
+
+.md_style5 .v-it .mdate.before {
+	display: block;
+	padding-left: var(--p-dim-icon-22);
+}
+
+.md_style5 .v-td .d-txt {
+	display: flex;
+	flex-direction: row-reverse;
+	text-align: left;
+	justify-content: start;
+	margin-bottom: var(--p-space-2p5);
+}
+
+.md_style5 .v-td .d-txt .mtitle {
+	padding-right: var(--p-space-7p5);
+}
+
+.md_style5 .v-td .mbox:hover .d-txt a {
+	color: var(--p-color-accent-500);
+}
+
+.md_style5 h2.mt-title:before {
+	background: var(--p-color-brand-500);
+	height: var(--p-border-width-lg);
+	border-radius: var(--p-radius-pill);
+}
+
+.md_style5 header.mt {
+	background: transparent;
+	box-shadow: none;
+	display: flex;
+	justify-content: center;
+	border-bottom: var(--p-border-width-md) solid var(--p-color-brand-200);
+	border-radius: 0;
+}
+
+.md_style5 header.mt .mt-title {
+	color: var(--p-color-brand-900);
+	text-shadow: none;
+}
+
+/* --- style6 --- */
+.md_style6 .d-item.d-title .d-txt .mtitle .mdate {
+	display: inline;
+	border-left: solid var(--p-border-width-sm) var(--s-color-text-primary);
+	border-right: solid var(--p-border-width-sm) var(--s-color-text-primary);
+	padding: 0 var(--p-space-1p25);
+	margin-right: var(--pt-space-40);
+}
+
+.md_style6 .d-title .mbox .mtitle {
+	padding: var(--p-space-2p5) var(--pt-space-40);
+	margin: 0;
+}
+
+.md_style6 .d-title .mbox:hover .mtitle {
+	background: var(--p-color-white);
+	box-shadow: var(--p-shadow-sm);
+}
+
+.md_style6 .d-title .mbox:hover .mtitle .mdate {
+	color: var(--p-color-accent-500);
+	border-color: var(--p-color-accent-500);
+}
+
+.md_style6 .d-title .mbox:hover .mtitle a {
+	color: var(--p-color-accent-500);
+	border-color: var(--p-color-accent-500);
+}
+
+.md_style6 header.mt .mt-title {
+	background: var(--p-color-brand-50);
+	color: var(--p-color-brand-900);
+	border-top: var(--p-border-width-lg) solid var(--p-color-brand-600);
+	text-align: center;
+	text-shadow: none;
+}
+
+/* --- style7 --- */
+.md_style7 .d-title .mbox .mtitle {
+	background: var(--p-color-white);
+	padding: var(--p-space-2p5) var(--p-space-3p75);
+	border-radius: var(--p-radius-md);
+	box-shadow: var(--p-shadow-sm);
+	border: solid var(--p-border-width-sm) transparent;
+}
+
+.md_style7 .d-title .mbox:hover .mtitle {
+	border-color: var(--p-color-accent-500);
+	transition: all var(--p-motion-dur-150) var(--p-motion-ease-standard);
+}
+
+.md_style7 .d-title .mbox:hover .mtitle .mdate {
+	color: var(--p-color-accent-500);
+}
+
+.md_style7 .d-title .mbox:hover .mtitle a {
+	color: var(--p-color-accent-500);
+}
+
+.md_style7 header.mt .mt-title {
+	color: var(--p-color-brand-800);
+	background: transparent;
+	border-bottom: var(--p-border-width-md) solid var(--p-color-brand-500);
+	padding-left: 0;
+	text-shadow: none;
+}
+
+/* --- style8 --- */
+.md_style8 h2.mt-title {
+	color: var(--p-color-brand-800);
+	font-weight: var(--p-font-weight-medium);
+	background: none;
+	border-left: var(--p-border-width-lg) solid var(--p-color-accent-500);
+	padding-left: var(--p-space-4);
+	text-shadow: none;
+}
+
+.md_style8 section.mb {
+	padding-left: var(--pt-space-70);
+}
+
+/* Complex & special module overrides */
+.module-complex.md_style1 section.mb {
+	background: none;
+	box-shadow: none;
+	padding: var(--p-space-2p5) 0;
+}
+
+.module.module-detail.md_style1 .mb {
+	padding: 0;
+}
+
+.module.module-special.md_style8 {
+	/* [GLASS][MOD] special module container -> glass */
+	background: var(--s-color-glass-70);
+	box-shadow: var(--s-shadow-glass-md);
+	border-radius: var(--p-radius-xl);
+	border: var(--p-border-width-sm) solid var(--s-color-border-glass);
+	backdrop-filter: blur(var(--pt-effect-blur-glass));
+	-webkit-backdrop-filter: blur(var(--pt-effect-blur-glass));
+}
+
+/* [GLASS][MOD] mobilehome surface -> glass (md_style1/2/3 共用相同 glass 規則) */
+.page_mobilehome .md_style1 section.mb,
+.page_mobilehome .md_style2 section.mb,
+.page_mobilehome .md_style3 section.mb {
+	background: var(--s-color-glass-85);
+	backdrop-filter: blur(var(--pt-effect-blur-glass));
+	-webkit-backdrop-filter: blur(var(--pt-effect-blur-glass));
+	border-radius: 0 0 var(--p-space-5) var(--p-space-5);
+	padding: var(--p-space-2p5) var(--p-space-5);
+	box-shadow: var(--p-shadow-sm);
+}
+
+.tab-content .md_style1 .d-title .mbox:hover {
+	background: var(--p-color-white);
+	box-shadow: var(--p-shadow-sm);
+}
+
+.tab-content .md_style1 section.mb .d-item.d-title .mtitle:hover a {
+	color: var(--p-color-accent-500);
+}
+
+.tab-content .md_style6 .d-item.d-title .d-txt .mtitle .mdate {
+	border: none;
+}
+
+/* =========================================================
+   Consolidated @media Blocks
+   ========================================================= */
+
+@media (max-width: 767px) {
+	.md_style5 .d-item.d-img {
+		display: inline-block;
+		width: 48%;
+	}
+
+	.md_style8 h2.mt-title {
+		padding-top: var(--p-space-2p5);
+	}
+
+	.md_style8 section.mb {
+		padding-left: var(--p-space-0);
+		padding-bottom: var(--p-space-2p5);
+	}
+}
+
+@media (min-width: 768px) {
+	.md_style2 section.mb { min-height: var(--pt-size-200); }
+	.md_style3 section.mb { min-height: var(--pt-size-200); }
+	.md_style4 section.mb { min-height: var(--pt-size-200); }
+
+	.md_style8 h2.mt-title:after {
+		content: "";
+		width: var(--p-stroke-1);
+		height: var(--p-space-4p5);
+		background: var(--p-color-accent-500);
+		position: absolute;
+		right: var(--pt-offset-10-neg);
+	}
+
+	.module.module-link.md_style5 .listBS .d-img[class*="col-"] {
+		padding: 0 var(--p-space-5);
+	}
+
+	.module.module-special.md_style8 > .mouter {
+		display: flex;
+		align-items: flex-end;
+	}
+
+	.page_mobilehome .md_style1.module-link section.mb {
+		min-height: var(--pt-size-200);
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.md_style5 .d-item.v-td {
+		width: 50%;
+	}
+}

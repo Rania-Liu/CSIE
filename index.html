@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSIE – 國立臺中科技大學 資訊工程系</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-grid.min.css" />
+
+  <link rel="stylesheet" href="Tokens.css" />
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body class="page-home">
+
+  <div class="bgDecor" aria-hidden="true">
+    <div class="bgDecor__blob bgDecor__blob--top"></div>
+    <div class="bgDecor__blob bgDecor__blob--bottom"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <a class="mlogo" href="#">
+        <div class="mlogo-icon"><span>NUTC</span></div>
+        <div class="mlogo-mark">
+          <span class="mlogo-title">CSIE</span>
+          <span class="mlogo-subtitle">DEPT. OF COMPUTER SCIENCE</span>
+        </div>
+      </a>
+
+      <div class="navbar-collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#">系所介紹 <span class="caret">▾</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">系所簡介</a></li>
+              <li><a href="#">師資陣容</a></li>
+              <li><a href="#">設備資源</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">課程資訊 <span class="caret">▾</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">大學部課程</a></li>
+              <li><a href="#">研究所課程</a></li>
+            </ul>
+          </li>
+          <li><a href="#">師資陣容</a></li>
+          <li><a href="#">招生資訊</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-right-controls">
+        <button class="btn-lang" aria-label="切換語言">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"
+            aria-hidden="true">
+            <circle cx="8" cy="8" r="6.5" />
+            <path d="M8 1.5C8 1.5 5.5 5 5.5 8s2.5 6.5 2.5 6.5M8 1.5C8 1.5 10.5 5 10.5 8S8 14.5 8 14.5M1.5 8h13" />
+          </svg>
+          English
+        </button>
+        <button class="btn-search" aria-label="搜尋">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"
+            aria-hidden="true">
+            <circle cx="6.5" cy="6.5" r="5" />
+            <path d="M10.5 10.5l3.5 3.5" />
+          </svg>
+        </button>
+        <a href="#" class="btn-cta">系學會 / 學生專區</a>
+        <button class="navbar-toggler collapsed" aria-label="展開選單" aria-expanded="false"
+          onclick="this.classList.toggle('collapsed');var nc=document.getElementById('navbarCollapse');nc.classList.toggle('show');">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="main" role="main">
+    <div class="container main">
+      <div class="home-grid">
+
+        <!-- Hero -->
+        <section class="home-hero" aria-label="最新公告 Banner">
+          <div class="slide-tag">
+            <span class="slide-tag-dot" aria-hidden="true"></span>
+            ADMISSION
+            <span class="text-muted" style="font-weight:400;margin-left:8px;">2025.01.20</span>
+          </div>
+          <h2>115學年度 <strong>碩士班甄試入學</strong> 錄取名單公告</h2>
+          <p>恭喜所有錄取同學！歡迎加入國立臺中科技大學資訊工程系大家庭，請務必詳閱報到相關注意事項及時程。</p>
+          <div class="slide-avatars">
+            <div class="avatar-bubble" aria-hidden="true">A</div>
+            <div class="avatar-bubble" aria-hidden="true">B</div>
+            <div class="avatar-bubble" style="background:linear-gradient(135deg,#a78bfa,#6366f1);" aria-hidden="true">+
+            </div>
+            <a href="#" class="btn-read-more" style="margin-left:auto;">閱讀完整報導 →</a>
+          </div>
+          <div class="home-hero__dots" aria-hidden="true">
+            <span class="home-hero__dot"></span>
+            <span class="home-hero__dot is-active"></span>
+            <span class="home-hero__dot"></span>
+          </div>
+        </section>
+
+        <!-- News -->
+        <section class="home-news" aria-label="最新公告列表">
+          <div class="home-news-header">
+            <div class="section-title">
+              <h3>最新公告</h3>
+            </div>
+            <div class="tab-pills" role="tablist">
+              <button class="tab-pill is-active" role="tab" aria-selected="true">系務</button>
+              <button class="tab-pill" role="tab" aria-selected="false">徵才</button>
+              <button class="tab-pill" role="tab" aria-selected="false">活動</button>
+            </div>
+          </div>
+          <div class="home-news-body" role="tabpanel">
+            <ul>
+              <li class="d-item"><a href="#">
+                  <div class="mdate"><span class="mm">02月</span><span class="dd">02</span></div>
+                  <div class="d-txt">
+                    <div class="badge-row"><span class="badge home-badge--soft">#招生</span><span
+                        class="badge home-badge--hot">HOT</span></div>
+                    <div class="mtitle">115學年度碩士在職專班入學招生面試名單公告</div>
+                  </div>
+                </a></li>
+              <li class="d-item"><a href="#">
+                  <div class="mdate"><span class="mm">02月</span><span class="dd">02</span></div>
+                  <div class="d-txt">
+                    <div class="badge-row"><span class="badge home-badge--soft">#榮譽</span><span
+                        class="badge home-badge--hot">HOT</span></div>
+                    <div class="mtitle">Google Cloud 生成式 AI 培訓計畫通過名單</div>
+                  </div>
+                </a></li>
+              <li class="d-item"><a href="#">
+                  <div class="mdate"><span class="mm">12月</span><span class="dd">28</span></div>
+                  <div class="d-txt">
+                    <div class="badge-row"><span class="badge home-badge--soft">#教務</span></div>
+                    <div class="mtitle">114學年度第1學期選課注意事項</div>
+                  </div>
+                </a></li>
+            </ul>
+          </div>
+          <div class="home-news-footer"><a href="#">查看所有 328 則公告</a></div>
+        </section>
+
+        <!-- Quicklinks -->
+        <div class="home-quicklinks" role="navigation" aria-label="快速連結">
+          <div class="module isLift">
+            <div class="qicon" aria-hidden="true">📅</div>
+            <div class="qlink-title">行事曆</div>
+          </div>
+          <div class="module isLift">
+            <div class="qicon" aria-hidden="true">📋</div>
+            <div class="qlink-title">表單下載</div>
+          </div>
+          <div class="module isLift">
+            <div class="qicon" aria-hidden="true">🎓</div>
+            <div class="qlink-title">畢業專區</div>
+          </div>
+          <div class="module isLift">
+            <div class="qicon" aria-hidden="true">💻</div>
+            <div class="qlink-title">數位學習</div>
+          </div>
+        </div>
+
+        <!-- Event -->
+        <section class="home-event" aria-label="下一個活動">
+          <div class="event-clock" aria-hidden="true">⏱</div>
+          <div>
+            <div class="event-tag"><span class="event-tag-dot" aria-hidden="true"></span>NEXT EVENT</div>
+            <div class="event-title">系週會</div>
+            <div class="event-location">資訊館 2505 會議室</div>
+          </div>
+          <div class="event-date-row">
+            <div class="event-day" aria-hidden="true">24</div>
+            <div class="event-month-day">
+              <div>FEBRUARY</div>
+              <div>Wednesday</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Guide -->
+        <section class="home-guide" aria-label="新生入學指引">
+          <div>
+            <h3 class="guide-title">新生入學指引</h3>
+            <p class="guide-desc">探索資訊工程的無限可能，從這裡開始你的程式旅程。</p>
+          </div>
+          <a href="#" class="btn-guide">前往專區</a>
+        </section>
+
+      </div><!-- /.home-grid -->
+    </div><!-- /.container.main -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <div class="footer-brand-icon">CS</div>
+          <span class="footer-brand-name">國立臺中科技大學 資訊工程系</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon" aria-hidden="true">📍</span>
+          <span>404336 臺中市北區三民路三段129號 資訊館5樓 2505系辦公室</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon" aria-hidden="true">✉</span>
+          <a href="mailto:csie@nutc.edu.tw" style="color:var(--s-color-link);">csie@nutc.edu.tw</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-links-title">快速連結</div>
+        <ul class="footer-links">
+          <li><a href="#"><span class="footer-links-icon" aria-hidden="true">📰</span>書報網站</a></li>
+          <li><a href="#"><span class="footer-links-icon" aria-hidden="true">📅</span>行事曆</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="visitor-counter">
+          <div class="visitor-label">瀏覽人數</div>
+          <div class="visitor-digits" aria-label="瀏覽人數 2197394">
+            <span class="visitor-digit">2</span><span class="visitor-digit">1</span>
+            <span class="visitor-digit">9</span><span class="visitor-digit">7</span>
+            <span class="visitor-digit">3</span><span class="visitor-digit">9</span>
+            <span class="visitor-digit">4</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Copyright &copy; 2026 國立臺中科技大學 資訊工程系 (Dept. of CSIE, NUTC).</span>
+      <div class="footer-bottom-links">
+        <a href="#">網站資料開放宣告</a>
+        <span aria-hidden="true">｜</span>
+        <a href="#">資訊安全及隱私權政策</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.tab-pill').forEach(function (pill) {
+      pill.addEventListener('click', function () {
+        document.querySelectorAll('.tab-pill').forEach(function (p) { p.classList.remove('is-active'); p.setAttribute('aria-selected', 'false'); });
+        this.classList.add('is-active'); this.setAttribute('aria-selected', 'true');
+      });
+    });
+  </script>
+</body>
+
+</html>

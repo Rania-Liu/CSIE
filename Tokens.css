@@ -1,0 +1,642 @@
+:root {
+
+	/* ==========================================================================
+	 * 01) [p-] Primitive：顏色色盤 / 尺度（只放事實值，不得引用其他 token）
+	 * ========================================================================== */
+
+	/* 品牌主色（Sky Blue 系） */
+	--p-color-brand-50:  #f0f9ff;
+	--p-color-brand-100: #e0f2fe;
+	--p-color-brand-200: #bae6fd;
+	--p-color-brand-300: #7dd3fc;
+	--p-color-brand-400: #38bdf8;
+	--p-color-brand-500: #0ea5e9;
+	--p-color-brand-600: #0284c7;
+	--p-color-brand-700: #0369a1;
+	--p-color-brand-800: #075985;
+	--p-color-brand-900: #0c4a6e;
+	--p-color-brand-950: #082f49;
+
+	/* 輔助強調色（Indigo） */
+	--p-color-accent-50:  #ede9fe;
+	--p-color-accent-100: #ddd6fe;
+	--p-color-accent-200: #c4b5fd;
+	--p-color-accent-300: #a78bfa;
+	--p-color-accent-400: #8b5cf6;
+	--p-color-accent-500: #6366f1;
+	--p-color-accent-600: #4f46e5;
+	--p-color-accent-700: #4338ca;
+	--p-color-accent-800: #3730a3;
+	--p-color-accent-900: #312e81;
+	--p-color-accent-950: #1e1b4b;
+
+	/* 中性色（Slate） */
+	--p-color-slate-50:  #f8fafc;
+	--p-color-slate-100: #f1f5f9;
+	--p-color-slate-200: #e2e8f0;
+	--p-color-slate-300: #cbd5e1;
+	--p-color-slate-400: #94a3b8;
+	--p-color-slate-500: #64748b;
+	--p-color-slate-600: #475569;
+	--p-color-slate-700: #334155;
+	--p-color-slate-800: #1e293b;
+	--p-color-slate-900: #0f172a;
+	--p-color-slate-950: #020617;
+
+	/* 狀態色（成功 / 錯誤 / 警告）*/
+	--p-color-emerald-50:  #ecfdf5;
+	--p-color-emerald-100: #d1fae5;
+	--p-color-emerald-200: #a7f3d0;
+	--p-color-emerald-500: #10b981;
+	--p-color-emerald-600: #059669;
+	--p-color-emerald-700: #047857;
+
+	--p-color-rose-50:  #fff1f2;
+	--p-color-rose-100: #ffe4e6;
+	--p-color-rose-200: #fecdd3;
+	--p-color-rose-600: #e11d48;
+	--p-color-rose-700: #be123c;
+
+	--p-color-amber-50:  #fffbeb;
+	--p-color-amber-100: #fef3c7;
+	--p-color-amber-200: #fde68a;
+	--p-color-amber-300: #fcd34d;
+	--p-color-amber-400: #fbbf24;
+	--p-color-amber-500: #f59e0b;
+	--p-color-amber-600: #d97706;
+	--p-color-amber-700: #b45309;
+
+	/* 其他必要色 */
+	--p-color-white: #ffffff;
+	--p-color-black: #000000;
+
+	/* ==========================================================================
+	 * 02) [s-] Semantic：用途角色（可引用 p-）
+	 * ========================================================================== */
+
+	/* 背景 / 表面 */
+	--s-color-bg-body:        var(--p-color-slate-50);
+	--s-color-bg-surface:     var(--p-color-white);
+	--s-color-bg-surface-alt: var(--p-color-slate-50);
+	--s-color-bg-card:        var(--s-color-bg-surface);
+
+	/* 文字 */
+	--s-color-text-primary:   var(--p-color-slate-800);
+	--s-color-text-secondary: var(--p-color-slate-500);
+	--s-color-text-tertiary:  var(--p-color-slate-400);
+	--s-color-text-invert:    var(--p-color-white);
+
+	/* 品牌角色 */
+	--s-color-primary:       var(--p-color-brand-900);
+	--s-color-primary-hover: var(--p-color-brand-800);
+	--s-color-link:          var(--p-color-brand-600);
+	--s-color-text-brand:    var(--p-color-brand-600);
+
+	/* 狀態角色 */
+	--s-color-danger:  var(--p-color-rose-600);
+	--s-color-success: var(--p-color-emerald-500);
+	--s-color-warning: var(--p-color-amber-500);
+
+	--s-color-text-danger:  var(--s-color-danger);
+	--s-color-text-success: var(--s-color-success);
+	--s-color-text-warning: var(--s-color-warning);
+
+	/* 邊框 */
+	--s-color-border-light: var(--p-color-slate-100);
+	--s-color-border-base:  rgba(226, 232, 240, 0.8);
+	--s-color-border-focus: var(--p-color-brand-200);
+
+	/* ==========================================================================
+	 * 02a) [s-] Semantic（延伸）：玻璃/透明層、陰影顏色（可引用 p-）
+	 * ========================================================================== */
+
+	/* Glass surface tints (used in navbar/search/lang pills) */
+	--s-color-glass-85:       rgba(255, 255, 255, 0.85);
+	--s-color-glass-70:       rgba(255, 255, 255, 0.70);
+	--s-color-glass-50:       rgba(255, 255, 255, 0.50);
+	--s-color-glass-45:       rgba(255, 255, 255, 0.45);
+	--s-color-glass-20:       rgba(255, 255, 255, 0.20);
+	--s-color-glass-10:       rgba(255, 255, 255, 0.10);
+	--s-color-surface-alt-50: rgba(248, 250, 252, 0.50);
+
+	/* ==========================================================================
+	 * 02b) [s-] Semantic（新增）：Glassmorphism 統一規格（可引用 p-/s-）
+	 * - 目的：避免各檔案硬編碼透明度/陰影/邊框，統一以 Tokens.css 為單一真理來源
+	 * ========================================================================== */
+
+	/* Glass border / divider */
+	--s-color-border-glass:        color-mix(in srgb, var(--p-color-slate-200) 70%, transparent);
+	--s-color-border-glass-strong: color-mix(in srgb, var(--p-color-slate-300) 70%, transparent);
+
+	/* Glass shadows */
+	--s-shadow-glass-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+	--s-shadow-glass-sm: 0 6px 16px rgb(15 23 42 / 0.08);
+	--s-shadow-glass-md: 0 16px 40px rgb(15 23 42 / 0.12);
+
+	/* Glass-tinted primary (for buttons / highlights) */
+	--s-color-primary-glass:       color-mix(in srgb, var(--s-color-primary) 86%, transparent);
+	--s-color-primary-glass-hover: color-mix(in srgb, var(--s-color-primary-hover) 90%, transparent);
+
+	/* Brand-tinted shadow helpers */
+	--s-shadow-brand-20: rgba(12, 74, 110, 0.20);
+
+	/* ==========================================================================
+	 * 03) [s-] Effect：覆疊 / 光暈（可引用 p-/s-）
+	 * ========================================================================== */
+
+	--s-color-overlay-dark-50:  rgba(0, 0, 0, 0.5);
+	--s-color-overlay-dark-70:  rgba(0, 0, 0, 0.7);
+	--s-color-overlay-light-50: rgba(255, 255, 255, 0.5);
+
+	--s-color-glow-brand-03: rgba(14, 165, 233, 0.3);
+	--s-color-glow-brand-04: rgba(14, 165, 233, 0.4);
+	--s-color-glow-brand-50: rgba(14, 165, 233, 0.5);
+
+	/* ==========================================================================
+	 * 03a) [pt-] Pattern（延伸）：常用尺寸 / 模糊等級（可引用 p-/s-）
+	 * ========================================================================== */
+
+	/* NOTE: media query 無法可靠使用 var()；此處 token 僅作為規格宣告 */
+	--pt-bp-sm: 576px;
+	--pt-bp-md: 768px;
+	--pt-bp-lg: 992px;
+	--pt-bp-xl: 1200px;
+
+	/* Blur levels */
+	--pt-effect-blur-glass:   12px;
+	--pt-effect-blur-blob-lg: 110px;
+	--pt-effect-blur-blob-xl: 120px;
+
+	/* Blob / decoration dimensions */
+	--pt-blob-top-w:    800px;
+	--pt-blob-top-h:    500px;
+	--pt-blob-bottom-w: 600px;
+	--pt-blob-bottom-h: 600px;
+
+	/* 點狀背景圖樣 */
+	--pt-bg-dot:      radial-gradient(var(--p-color-slate-300) 1px, transparent 1px);
+	--pt-bg-dot-size: 24px 24px;
+
+	/* Common component sizes */
+	--cmp-size-control:    2.5rem;  /* 40px */
+	--cmp-size-control-md: 2.75rem; /* 44px */
+	--cmp-size-iconbar-w:  1.25rem;
+	--cmp-size-iconbar-h:  2px;
+
+	/* Legacy module spacing bridge (used by Module.css themes) */
+	--pt-space-25:          25px;
+	--pt-space-40:          40px;
+	--pt-space-70:          70px;
+	--pt-size-37:           37px;
+	--pt-size-52:           52px;
+	--pt-size-200:          200px;
+	--pt-offset-10-neg:     -10px;
+	--pt-offset-65-neg:     -65px;
+	--pt-shadow-circle-img: 3px 3px 6px var(--s-color-overlay-dark-70);
+
+	/* ==========================================================================
+	 * 04) [p-] Typography primitive（字體本體值）
+	 * ========================================================================== */
+
+	--p-font-family-sans: "Inter", "Noto Sans TC", sans-serif;
+	--p-font-family-mono: "JetBrains Mono", monospace;
+	--p-font-family-tech: "Orbitron", sans-serif;
+
+    --p-font-size-xs: 1rem;       /* 16px */
+    --p-font-size-sm: 1.125rem;   /* 18px */
+    --p-font-size-md: 1.25rem;    /* 20px */
+    --p-font-size-lg: 1.5rem;     /* 24px */
+    --p-font-size-xl: 1.875rem;   /* 30px */
+    --p-font-size-2xl: 2.25rem;   /* 36px */
+    --p-font-size-3xl: 3rem;      /* 48px */
+    --p-font-size-4xl: 3.75rem;   /* 60px */
+    --p-font-size-5xl: 4.5rem;    /* 72px */
+
+	--p-font-weight-thin:    100;
+	--p-font-weight-light:   300;
+	--p-font-weight-regular: 400;
+	--p-font-weight-medium:  500;
+	--p-font-weight-bold:    700;
+	--p-font-weight-black:   900;
+
+	--p-letter-spacing-tighter: -0.05em;
+	--p-letter-spacing-tight:   -0.025em;
+	--p-letter-spacing-wide:     0.05em;
+	--p-letter-spacing-wider:    0.1em;
+	--p-letter-spacing-widest:   0.2em;
+
+	--p-line-height-tight:   1.2;
+	--p-line-height-normal:  1.5;
+	--p-line-height-relaxed: 1.8;
+
+	/* ==========================================================================
+	 * 05) [p-] Layout primitive（間距、圓角、陰影、z-index）
+	 * ========================================================================== */
+
+	/* Spacing（數值升序排列，inline comment 統一同行） */
+	--p-space-0:     0px;
+	--p-space-1:     0.25rem;
+	--p-space-1p25:  0.3125rem;  /* 5px  */
+	--p-space-2:     0.5rem;
+	--p-space-2p5:   0.625rem;   /* 10px */
+	--p-space-3:     0.75rem;
+	--p-space-3p5:   0.875rem;   /* 14px */
+	--p-space-3p75:  0.9375rem;  /* 15px */
+	--p-space-4:     1rem;
+	--p-space-4p5:   1.125rem;   /* 18px */
+	--p-space-5:     1.25rem;
+	--p-space-6:     1.5rem;
+	--p-space-7:     1.75rem;    /* 28px */
+	--p-space-7p5:   1.875rem;   /* 30px */
+	--p-space-8:     2rem;
+	--p-space-9:     2.25rem;    /* 36px */
+	--p-space-10:    2.5rem;
+	--p-space-11p25: 2.8125rem;  /* 45px */
+	--p-space-12:    3rem;
+	--p-space-14:    3.5rem;     /* 56px */
+	--p-space-15:    3.75rem;    /* 60px */
+	--p-space-16:    4rem;       /* 64px */
+
+	/* Dimensions */
+	--p-dim-6:                 6px;
+	--p-dim-container-max:     1280px;
+	--p-dim-nav-height:        80px;
+	--p-dim-nav-collapse-maxh: 550px;
+	--p-dim-dropdown-min:      200px;
+	--p-dim-dropdown-min-lg:   285px;
+	--p-dim-search-min:        240px;
+	--p-dim-search-w:          200px;
+	--p-dim-search-w-focus:    260px;
+	--p-dim-search-btn-w:      35px;
+
+	/* Icon dimensions（數值升序排列） */
+	--p-dim-icon-7:  7px;
+	--p-dim-icon-8:  8px;
+	--p-dim-icon-11: 11px;
+	--p-dim-icon-12: 12px;
+	--p-dim-icon-15: 15px;
+	--p-dim-icon-16: 16px;
+	--p-dim-icon-17: 17px;
+	--p-dim-icon-18: 18px;
+	--p-dim-icon-19: 19px;
+	--p-dim-icon-20: 20px;
+	--p-dim-icon-22: 22px;
+	--p-dim-icon-24: 24px;
+	--p-dim-icon-25: 25px;
+	--p-dim-icon-28: 28px;
+	--p-dim-icon-44: 44px;
+
+	/* Stroke */
+	--p-stroke-1: 1px;
+	--p-stroke-2: 2px;
+	--p-stroke-3: 3px;
+
+	/* Border widths */
+	--p-border-width-sm: 1px;
+	--p-border-width-md: 2px;
+	--p-border-width-lg: 4px;
+	--p-border-width-xl: 8px;
+
+	/* Radius */
+	--p-radius-sm:   0.25rem;
+	--p-radius-md:   0.5rem;
+	--p-radius-lg:   0.75rem;
+	--p-radius-xl:   1rem;
+	--p-radius-2xl:  1.5rem;
+	--p-radius-3xl:  2rem;
+	--p-radius-pill: 9999px;
+
+	/* Shadows */
+	--p-shadow-xs:         0 1px 2px 0 rgb(0 0 0 / 0.05);
+	--p-shadow-sm:         0 4px 6px -1px rgb(0 0 0 / 0.1);
+	--p-shadow-md:         0 10px 15px -3px rgb(0 0 0 / 0.1);
+	--p-shadow-lg:         0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+	--p-shadow-xl:         0 25px 50px -12px rgb(0 0 0 / 0.25);
+	--p-shadow-glow-brand: 0 0 20px rgba(14, 165, 233, 0.4);
+
+	/* Motion durations */
+	--p-motion-dur-150: 150ms;
+	--p-motion-dur-200: 200ms;
+	--p-motion-dur-300: 300ms;
+	--p-motion-dur-500: 500ms;
+	--p-motion-dur-700: 700ms;
+
+	/* Motion easings（統一省略前導 0） */
+	--p-motion-ease-standard: cubic-bezier(.4,  0,    .2,  1);
+	--p-motion-ease-emph:     cubic-bezier(.25, 1,    .5,  1);
+	--p-motion-ease-spring:   cubic-bezier(.34, 1.56, .64, 1);
+	--p-motion-ease-lift:     cubic-bezier(.34, 1.56, .64, 1);
+
+	/* Z-index */
+	--p-z-negative: -1;
+	--p-z-base:      1;
+	--p-z-hover:    10;
+	--p-z-sticky:   50;
+	--p-z-fixed:   100;
+	--p-z-modal:  1000;
+	--p-z-max:     999;
+
+	/* ==========================================================================
+	 * 06) [pt-] Pattern：跨元件共用設計語法
+	 * ========================================================================== */
+
+	/* em units（數值升序排列） */
+	--pt-em-025: 0.25em;
+	--pt-em-05:  0.5em;
+	--pt-em-1:   1em;
+	--pt-em-15:  1.5em;
+	--pt-em-2:   2em;
+
+	/* Offsets */
+	--pt-offset-neg-2px:                         -2px;
+	--pt-offset-carousel-nav:                    -50px;
+	--pt-offset-footer-mobilecounter-label-left: -65px;
+
+	/* 玻璃材質（Glassmorphism） */
+	--pt-glass-bg:       rgba(255, 255, 255, 0.85);
+	--pt-glass-bg-muted: rgba(255, 255, 255, 0.6);
+
+	/* focus ring（統一焦點視覺語法） */
+	--pt-focus-ring-width:   2px;
+	--pt-focus-ring-shadow:  var(--p-shadow-glow-brand);
+	--pt-focus-border-color: var(--s-color-border-focus);
+
+	/* 表單基底（input/select/textarea 共用） */
+	--pt-form-radius:       var(--p-radius-md);
+	--pt-form-shadow:       var(--p-shadow-xs);
+	--pt-form-shadow-hover: var(--p-shadow-sm);
+	--pt-form-shadow-focus: var(--pt-focus-ring-shadow);
+
+	/* ==========================================================================
+	 * 07) [cmp-] Component：元件 token（只引用 pt-/s-，不碰事實值）
+	 * ========================================================================== */
+
+	/* Card */
+	--cmp-card-radius:       var(--p-radius-2xl);
+	--cmp-card-shadow:       var(--p-shadow-sm);
+	--cmp-card-shadow-hover: var(--p-shadow-lg);
+
+	/* Button */
+	--cmp-btn-radius:       var(--p-radius-pill);
+	--cmp-btn-shadow:       var(--p-shadow-xs);
+	--cmp-btn-shadow-hover: var(--p-shadow-sm);
+
+	/* Input */
+	--cmp-input-radius:       var(--pt-form-radius);
+	--cmp-input-shadow:       var(--pt-form-shadow);
+	--cmp-input-shadow-hover: var(--pt-form-shadow-hover);
+	--cmp-input-shadow-focus: var(--pt-form-shadow-focus);
+
+	/* Select */
+	--cmp-select-radius:       var(--pt-form-radius);
+	--cmp-select-shadow:       var(--pt-form-shadow);
+	--cmp-select-shadow-hover: var(--pt-form-shadow-hover);
+	--cmp-select-shadow-focus: var(--pt-form-shadow-focus);
+
+	/* Textarea */
+	--cmp-textarea-radius:       var(--pt-form-radius);
+	--cmp-textarea-shadow:       var(--pt-form-shadow);
+	--cmp-textarea-shadow-hover: var(--pt-form-shadow-hover);
+	--cmp-textarea-shadow-focus: var(--pt-form-shadow-focus);
+
+	/* Modal */
+	--cmp-modal-radius: var(--p-radius-2xl);
+	--cmp-modal-shadow: var(--p-shadow-xl);
+	--cmp-modal-bg:     var(--pt-glass-bg);
+
+	/* Popover */
+	--cmp-popover-radius: var(--p-radius-xl);
+	--cmp-popover-shadow: var(--p-shadow-lg);
+	--cmp-popover-bg:     var(--pt-glass-bg-muted);
+
+	/* Nav */
+	--cmp-nav-height:    var(--p-dim-nav-height);
+	--cmp-nav-bg:        rgba(255, 255, 255, 0.85);
+	--cmp-nav-shadow:    var(--p-shadow-sm);
+	--cmp-nav-padding-x: var(--p-space-6);
+	--cmp-nav-padding-y: var(--p-space-0);
+	--cmp-nav-gap:       var(--p-space-4);
+
+	/* Dropdown */
+	--cmp-dropdown-min-width:    var(--p-dim-dropdown-min);
+	--cmp-dropdown-min-width-lg: var(--p-dim-dropdown-min-lg);
+
+	/* Header / Footer */
+	--cmp-header-logo-padding-top: var(--p-space-11p25);
+	--cmp-footer-pad-y:            var(--p-space-16);
+	--cmp-footer-pad-x:            var(--p-space-8);
+
+	/* To-Top button */
+	--cmp-toTop-size:   var(--p-space-16);
+	--cmp-toTop-offset: var(--p-space-8);
+	--cmp-toTop-shadow: var(--p-shadow-md);
+	--cmp-toTop-z:      var(--p-z-sticky);
+
+	/* Carousel */
+	--cmp-carousel-nav-offset: var(--pt-offset-carousel-nav);
+
+	/* Tab */
+	--cmp-tab-radius:        var(--p-radius-md);
+	--cmp-tab-shadow:        var(--p-shadow-xs);
+	--cmp-tab-shadow-hover:  var(--p-shadow-xs);
+	--cmp-tab-shadow-active: var(--p-shadow-sm);
+	--cmp-tab-bg:            var(--s-color-bg-surface-alt);
+	--cmp-tab-bg-hover:      var(--s-color-bg-surface-alt);
+	--cmp-tab-bg-active:     var(--s-color-bg-surface);
+
+	/* ==========================================================================
+	 * 08) [pt-] Patterns：Home / Modules 共用設計語法
+	 * ========================================================================== */
+
+	/* Geometric background pattern (for feature cards) */
+	--pt-bg-geo:
+		linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.00) 60%),
+		repeating-linear-gradient(60deg, rgba(255, 255, 255, 0.10) 0 40px, rgba(255, 255, 255, 0.00) 40px 80px);
+
+	/* Card bottom overlay for text readability on images */
+	--pt-overlay-card-bottom:
+		linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.55) 70%, rgba(0, 0, 0, 0.70) 100%);
+
+	/* Soft badge (e.g., #招生) */
+	--pt-badge-soft-bg:     var(--s-color-bg-surface-alt);
+	--pt-badge-soft-text:   var(--s-color-text-secondary);
+	--pt-badge-soft-border: var(--s-color-border-light);
+
+	/* Solid badge (e.g., HOT/Event) */
+	--pt-badge-solid-text:     var(--s-color-text-invert);
+	--pt-badge-solid-bg-hot:   var(--s-color-danger);
+	--pt-badge-solid-bg-event: var(--p-color-accent-600);
+	--pt-badge-solid-bg-brand: var(--p-color-brand-600);
+
+	/* Section accent bar (left stripe) */
+	--pt-section-accent-w: 0.5rem;
+	--pt-section-accent-r: var(--p-radius-pill);
+
+	/* File chips (download format) */
+	--pt-filechip-radius:   var(--p-radius-md);
+	--pt-filechip-pad-y:    0.625rem;
+	--pt-filechip-pad-x:    1rem;
+	--pt-filechip-border-w: 1px;
+
+	--pt-filechip-pdf-bg:     rgba(225, 29, 72, 0.10);
+	--pt-filechip-pdf-text:   var(--s-color-danger);
+	--pt-filechip-pdf-border: rgba(225, 29, 72, 0.25);
+
+	--pt-filechip-doc-bg:     rgba(2, 132, 199, 0.10);
+	--pt-filechip-doc-text:   var(--p-color-brand-700);
+	--pt-filechip-doc-border: rgba(2, 132, 199, 0.25);
+
+	--pt-filechip-ppt-bg:     rgba(217, 119, 6, 0.10);
+	--pt-filechip-ppt-text:   var(--p-color-amber-700);
+	--pt-filechip-ppt-border: rgba(217, 119, 6, 0.25);
+
+	--pt-filechip-odt-bg:     rgba(99, 102, 241, 0.10);
+	--pt-filechip-odt-text:   var(--p-color-accent-700);
+	--pt-filechip-odt-border: rgba(99, 102, 241, 0.25);
+
+	--pt-filechip-xls-bg:     rgba(16, 185, 129, 0.10);
+	--pt-filechip-xls-text:   var(--p-color-emerald-700);
+	--pt-filechip-xls-border: rgba(16, 185, 129, 0.25);
+
+	/* ==========================================================================
+	 * 09) [pt-/cmp-] Utility tokens（補齊各檔 magic number）
+	 * ========================================================================== */
+
+	/* Off-screen / visually-hidden */
+	--pt-offscreen:  -9999px;
+	--pt-size-1px:   1px;
+	--pt-size-4:     4px;
+
+	/* Scrollbar */
+	--pt-scrollbar-w:      6px;
+	--pt-scrollbar-radius: 10px;
+
+	/* Blur levels（補齊 sm）*/
+	--pt-effect-blur-sm: 8px;
+
+	/* Hover / animation translate */
+	--pt-translate-y-dropdown: -10px;
+	--pt-translate-y-lift-xs:   -1px;
+	--pt-translate-y-lift-sm:   -2px;
+	--pt-translate-y-lift-md:   -4px;
+	--pt-translate-y-iconbar:    6px;
+
+	/* Font sizes（補齊 2xs 與元件專用） */
+	--p-font-size-2xs:           0.625rem;  /* 10px badge / date mm */
+	--pt-font-size-table-header: 0.8rem;
+	--pt-font-size-table-body:   0.95rem;
+	--pt-font-size-date-dd:      1.25rem;
+	--pt-font-size-slide-title:  clamp(1.5rem, 3vw, 2.25rem);
+
+	/* Dimensions */
+	--pt-home-quicklinks-min-h: 180px;
+	--pt-home-qicon-size:        56px;
+	--pt-dim-footer-grid-max:    80rem;
+	--pt-section-title-h:      2.25rem;
+
+	/* Component shadows / transforms */
+	--cmp-logo-icon-shadow:         0 10px 24px var(--s-shadow-brand-20);
+	--cmp-focus-ring-shadow:        0 0 0 3px var(--s-color-glow-brand-03);
+	--cmp-iconbar-radius:           2px;
+	--cmp-divider-h:                1px;
+
+	/* Navbar */
+	--pt-navbar-fixed-pad-x:   1.5rem;
+	--pt-navbar-collapse-pad: 0.375rem;
+
+	/* Nav link */
+	--cmp-nav-link-gap:  var(--p-space-1);   /* 0.25rem */
+	--cmp-nav-link-pad:  var(--p-space-2) var(--p-space-4);
+	--cmp-nav-caret-ml:  var(--p-space-1);   /* 0.25rem */
+
+	/* Dropdown */
+	--cmp-dropdown-mt:        var(--p-space-2);
+	--cmp-dropdown-pad:       var(--p-space-2);
+	--cmp-dropdown-item-pad:  var(--p-space-2p5) var(--p-space-4);
+	--cmp-dropdown-divider-my: var(--p-space-2) 0;
+	--cmp-dropdown-sub-ml:    var(--p-space-2);
+
+	/* Search */
+	--cmp-search-pad:       0 var(--p-space-4) 0 var(--p-space-10);
+	--cmp-search-icon-left: 0.875rem;  /* 偏移量，保留具體值 */
+
+	/* Language button */
+	--cmp-lang-btn-gap:       var(--p-space-2);
+	--cmp-lang-btn-pad:       var(--p-space-2) var(--p-space-4);
+	--cmp-lang-btn-icon-size: var(--p-space-4);  /* 1rem */
+
+	/* Banner slider */
+	--cmp-slide-pad:     var(--p-space-12) var(--p-space-8);
+	--cmp-slide-tag-pad: var(--p-space-1) var(--p-space-3);
+	--cmp-slide-tag-mb:  var(--p-space-4);
+	--cmp-slide-h2-mb:   var(--p-space-4);
+	--cmp-slide-p-mb:    var(--p-space-6);
+
+	/* d-item list */
+	--cmp-d-item-gap: var(--p-space-4);
+	--cmp-d-item-pad: var(--p-space-4);
+
+	/* Date badge */
+	--cmp-mdate-size: var(--p-space-14);  /* 3.5rem */
+
+	/* Quick link icon */
+	--cmp-quick-icon-size: var(--p-space-12);  /* 3rem */
+	--cmp-quick-icon-mb:   var(--p-space-2);
+	--cmp-quick-icon-fs:   var(--p-space-6);   /* 1.5rem */
+
+	/* Button */
+	--cmp-btn-gap: var(--p-space-2);
+	--cmp-btn-pad: var(--p-space-2p5) var(--p-space-5);  /* 0.625rem 1.25rem */
+
+	/* Badge */
+	--cmp-badge-pad: var(--p-space-1) var(--p-space-2);
+
+	/* Form */
+	--cmp-form-select-pr: var(--p-space-10);   /* 2.5rem */
+	--cmp-form-group-mb:  var(--p-space-6);
+	--cmp-label-mb:       var(--p-space-2);
+
+	/* Breadcrumb */
+	--cmp-breadcrumb-pad:    var(--p-space-3) 0;
+	--cmp-breadcrumb-my:     var(--p-space-6) 0;
+	--cmp-breadcrumb-gap:    var(--p-space-2);
+	--cmp-breadcrumb-sep-px: 0 var(--p-space-2);
+
+	/* Pagination */
+	--cmp-pagination-gap:     var(--p-space-2);
+	--cmp-pagination-my:      var(--p-space-8) 0;
+	--cmp-pagination-item-px: 0 var(--p-space-3);
+
+	/* Home module spacing */
+	--md-home-hero-tag-gap:    var(--p-space-2);
+	--md-home-hero-tag-pad:    var(--p-space-2) var(--p-space-4);
+	--md-home-hero-tag-bg:     rgba(2, 132, 199, 0.10);
+	--md-home-hero-btn-pad:    var(--p-space-3) var(--p-space-5);
+	--md-home-hero-badge-pad:  var(--p-space-2) var(--p-space-3);
+	--md-home-hero-dots-gap:   var(--p-space-2);
+	--md-home-news-btn-xs-pad: var(--p-space-2) 0.9rem;  /* 0.9rem 非標準值，保留 */
+	--md-home-news-badge-pad:  0.35rem 0.7rem;             /* 非標準值，保留 */
+	--md-home-quicklinks-min-h: var(--pt-home-quicklinks-min-h);
+	--md-home-qicon-size:       var(--pt-home-qicon-size);
+	--md-home-section-title-h:  var(--pt-section-title-h);
+
+	/* ==========================================================================
+	 * 10) [md-home-] Home module tokens（Home-only vocabulary）
+	 * ========================================================================== */
+
+	--md-home-hero-bg:         linear-gradient(135deg, var(--s-color-glass-85), var(--s-color-glass-50));
+	--md-home-hero-shadow:     var(--p-shadow-lg);
+	--md-home-hero-title-size: clamp(2.25rem, 2.2vw + 1.25rem, 3.25rem);
+
+	--md-home-hero-dot-h:         6px;
+	--md-home-hero-dot-w:         22px;
+	--md-home-hero-dot-w-active:  30px;
+	--md-home-hero-dot-bg:        rgba(255, 255, 255, 0.60);
+	--md-home-hero-dot-bg-active: var(--p-color-brand-400);
+
+	--md-home-date-tile-w:  40px;
+	--md-home-date-tile-h:  40px;
+	--md-home-date-mm-size: var(--p-font-size-xs);
+	--md-home-date-dd-size: var(--p-font-size-xl);
+
+}
